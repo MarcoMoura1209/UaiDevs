@@ -1,0 +1,44 @@
+:root {
+    /* ========== CORES ========== */
+
+    --primaria: #16202A;
+    --secundaria: #00FFFF;
+    --footer: #21262C;
+    --botao-verde: #004B4B;
+    --botao-cinza: #50565C;
+    --textos: rgba(255, 255, 255, 1);
+    --textos-80: rgba(255, 255, 255, .8);
+    --textos-50: rgba(255, 255, 255, .5);
+
+
+    /* ========== TIPOGRAFIA ========== */
+
+    
+    /* Font Families */
+    --font-primary: 'Plus Jakarta Sans', sans-serif;
+
+    /* Font Size Base */
+    --font-size-base: 1rem;  /* 16px */
+
+    /* Font Sizes - Escala 1.25 */
+    --font-size-xs: calc(var(--font-size-base) * 0.75);      /* 12px */
+    --font-size-sm: calc(var(--font-size-base) * 0.875);     /* 14px */
+    --font-size-md: var(--font-size-base);                    /* 16px */
+    --font-size-lg: calc(var(--font-size-base) * 1.125);     /* 18px */
+    --font-size-xl: calc(var(--font-size-base) * 1.5);       /* 24px */
+    --font-size-2xl: calc(var(--font-size-base) * 1.875);    /* 30px */
+    --font-size-3xl: calc(var(--font-size-base) * 2.5);      /* 40px */
+    --font-size-4xl: calc(var(--font-size-base) * 3.5);      /* 56px */
+    --font-size-5xl: calc(var(--font-size-base) * 4.5);      /* 72px */
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+}

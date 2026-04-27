@@ -1,0 +1,33 @@
+
+
+header {
+    height: 4rem;
+    padding: 0rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--textos-50);
+    transition: .3s;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+}
+
+nav ul a:hover {
+    color: var(--secundaria);
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+}

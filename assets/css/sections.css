@@ -5,7 +5,6 @@
 #solucao {
     padding: 0rem 10rem;
     width: 100%;
-    scroll-margin: 8rem;
 }
 
 .titulo-solucao {
@@ -13,25 +12,14 @@
     font-weight: var(--font-weight-extra-bold);
     max-width: 40rem;
     margin: 2rem 0rem;
+    font-size: var(--font-size-5xl);
 }
 
 .paragrafo-solucao {
     font-size: var(--font-size-lg);
     line-height: var(--line-height-relaxed);
-    font-weight: var(--font-weight-little);
+    font-weight: var(--font-weight-light);
     text-align: justify;
     max-width: 32rem;
+    color: var(--paragrafo);
 }
-
-#solucao a {
-    margin: 2rem 0rem;
-    display: inline-block;
-    padding: 1.25rem 2rem;
-    background-color: var(--secundaria);
-    font-weight: var(--font-weight-extra-bold);
-    font-size: var(--font-size-sm);
-    text-decoration: none;
-    color: #005D5D;
-    box-shadow: 0rem 0rem .5rem var(--secundaria);
-}
-

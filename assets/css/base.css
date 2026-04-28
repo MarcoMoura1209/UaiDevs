@@ -10,14 +10,10 @@ body {
     padding-top: 7rem;
 }
 
-h1 {
-    font-size: var(--font-size-5xl);
-}
 
-p {
-    color: var(--paragrafo);
+section[id] {
+    scroll-margin-top: 8rem;
 }
-
 
 .texto-cor-secundaria {
     color: var(--secundaria);

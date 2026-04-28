@@ -33,7 +33,7 @@
     --font-size-5xl: calc(var(--font-size-base) * 4.5);      /* 72px */
 
     /* Font Weights */
-    --font-weight-little: 300;
+    --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;

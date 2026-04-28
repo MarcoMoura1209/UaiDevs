@@ -41,3 +41,15 @@ nav ul a:hover {
     border: .05rem solid ;
     color: var(--secundaria);
 }
+
+.btn-cta {
+    margin: 2rem 0rem;
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    background-color: var(--secundaria);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    color: #005D5D;
+    box-shadow: 0rem 0rem .5rem var(--secundaria);
+}

@@ -7,4 +7,22 @@
 body {
     background-color: var(--background-body);
     font-family: var(--font-primary);
+    padding-top: 7rem;
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+}
+
+p {
+    color: var(--paragrafo);
+}
+
+
+.texto-cor-secundaria {
+    color: var(--secundaria);
+}
+
+.texto-bold {
+    font-weight: var(--font-weight-bold);
 }

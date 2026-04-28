@@ -6,9 +6,10 @@
     --footer: #21262C;
     --botao-verde: #004B4B;
     --botao-cinza: #50565C;
-    --textos: rgba(255, 255, 255, 1);
-    --textos-80: rgba(255, 255, 255, .8);
-    --textos-50: rgba(255, 255, 255, .5);
+    --branco: rgba(255, 255, 255, 1);
+    --branco-80: rgba(255, 255, 255, .8);
+    --branco-50: rgba(255, 255, 255, .5);
+    --paragrafo: #A2ACB9;
 
 
     /* ========== TIPOGRAFIA ========== */
@@ -32,10 +33,12 @@
     --font-size-5xl: calc(var(--font-size-base) * 4.5);      /* 72px */
 
     /* Font Weights */
+    --font-weight-little: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
 
     /* Line Heights */
     --line-height-tight: 1.2;

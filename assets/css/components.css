@@ -38,7 +38,7 @@ nav ul a:hover {
     font-weight: var(--font-weight-bold);
     background-color: var(--primaria);
     padding: .3rem .5rem;
-    border: .05rem solid ;
+    border: .05rem solid var(--secundaria);
     color: var(--secundaria);
 }
 
@@ -52,12 +52,11 @@ nav ul a:hover {
     text-decoration: none;
     color: #005D5D;
     box-shadow: 0rem 0rem .5rem var(--secundaria);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.icon-problema {
-    color: var(--vermelho);
-    font-size: var(--font-size-xl);
-}
+
 
 .overlay {
     margin-top: .5rem;

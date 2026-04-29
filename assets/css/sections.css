@@ -3,6 +3,7 @@
 
 
 #solucao {
+    margin-top: .2rem;
     height: 90vh;
     padding: 0rem 10rem;
     width: 100%;
@@ -37,9 +38,14 @@
     background-color: var(--background-problema);
 }
 
+.container-heading-problema h2 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-extra-bold);
+}
+
 .container-card-problema {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin: 3rem 0rem;
 }
@@ -48,10 +54,15 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 24rem;
+    width: 22rem;
     padding: 2.5rem;
     background-color: var(--background-card-problema);
     border-left: .2rem solid var(--vermelho);
+}
+
+.icon-problema {
+    color: var(--vermelho);
+    font-size: var(--font-size-xl);
 }
 
 .card-problema p {

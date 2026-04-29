@@ -9,7 +9,7 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
-    /* border-bottom: 2px solid #fff; */
+    background-color: var(--background-body);
 }
 
 
@@ -52,4 +52,9 @@ nav ul a:hover {
     text-decoration: none;
     color: #005D5D;
     box-shadow: 0rem 0rem .5rem var(--secundaria);
+}
+
+.icon-problema {
+    color: var(--vermelho);
+    font-size: var(--font-size-xl);
 }

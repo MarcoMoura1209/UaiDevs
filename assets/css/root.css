@@ -1,6 +1,8 @@
 :root {
     /* ========== CORES ========== */
     --background-body: #050F18;
+    --background-problema: #3f49541a;
+    --background-card-problema: #182735;
     --primaria: #16202A;
     --secundaria: #00FFFF;
     --footer: #21262C;
@@ -10,7 +12,7 @@
     --branco-80: rgba(255, 255, 255, .8);
     --branco-50: rgba(255, 255, 255, .5);
     --paragrafo: #A2ACB9;
-
+    --vermelho: #fa5e58b3;
 
     /* ========== TIPOGRAFIA ========== */
 

@@ -3,12 +3,12 @@
 
 
 #solucao {
+    height: 90vh;
     padding: 0rem 10rem;
     width: 100%;
 }
 
 .titulo-solucao {
-    color: var(--branco);
     font-weight: var(--font-weight-extra-bold);
     max-width: 40rem;
     margin: 2rem 0rem;
@@ -22,4 +22,46 @@
     text-align: justify;
     max-width: 32rem;
     color: var(--paragrafo);
+}
+
+
+/* ========  PROBLEMA ======== */
+
+.problema {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 6rem 5rem;
+    width: 100%;
+    height: 35.75rem;
+    background-color: var(--background-problema);
+}
+
+.container-card-problema {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0rem;
+}
+
+.card-problema {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 22rem;
+    padding: 2.5rem;
+    background-color: var(--background-card-problema);
+    border-left: .2rem solid var(--vermelho);
+}
+
+.card-problema p {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-normal);
+    color: var(--paragrafo);
+}
+
+.card-problema h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
 }

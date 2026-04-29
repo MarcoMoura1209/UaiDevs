@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-body);
     font-family: var(--font-primary);
-    padding-top: 7rem;
+    padding-top: 7.1rem;
 }
 
+h1, h2, h3, h4 {
+    color: var(--branco);
+}
+
+h2 {
+    font-size: 3rem;
+}
 
 section[id] {
     scroll-margin-top: 8rem;
@@ -17,6 +28,10 @@ section[id] {
 
 .texto-cor-secundaria {
     color: var(--secundaria);
+}
+
+.texto-vermelho {
+    color: var(--vermelho);
 }
 
 .texto-bold {

@@ -76,3 +76,28 @@
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
 }
+
+
+/* ========  ALTERNATIVA  ======== */
+
+
+.alternativa {
+    padding: 7rem 5rem;
+    display: flex;
+}
+
+.container-texto-alternativa {
+    width: 40%;
+}
+
+.titulo-alternativa {
+    font-size: var(--font-size-4xl-tight);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.container-texto-alternativa p {
+    margin-top: 1.5rem;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-lg);
+    color: var(--paragrafo);
+}

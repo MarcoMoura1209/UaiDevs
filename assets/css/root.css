@@ -31,6 +31,7 @@
     --font-size-xl: calc(var(--font-size-base) * 1.5);       /* 24px */
     --font-size-2xl: calc(var(--font-size-base) * 1.875);    /* 30px */
     --font-size-3xl: calc(var(--font-size-base) * 2.5);      /* 40px */
+    --font-size-4xl-tight: calc(var(--font-size-base) * 3);  /* 48px */
     --font-size-4xl: calc(var(--font-size-base) * 3.5);      /* 56px */
     --font-size-5xl: calc(var(--font-size-base) * 4.5);      /* 72px */
 

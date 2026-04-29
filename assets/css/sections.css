@@ -84,6 +84,7 @@
 .alternativa {
     padding: 7rem 5rem;
     display: flex;
+    align-items: center;
 }
 
 .container-texto-alternativa {
@@ -100,4 +101,22 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-lg);
     color: var(--paragrafo);
+}
+
+.container-card-alternativa {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.container-card-alternativa *:last-child{
+    grid-column: span 2;
+}
+
+.card-alternativa {
+    height: 13.25rem;
+    background-color: var(--background-card-problema-alternativa);
+    border: .05rem solid rgba(63, 73, 84, 0.1);
+    border-radius: .7rem;
 }

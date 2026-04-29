@@ -3,14 +3,15 @@
     --background-escuro: #050F18;
     --background-claro: #3f49541a;
     --background-card-problema: #182735;
+    --background-card-problema-alternativa: #13212D;
     --primaria: #16202A;
     --secundaria: #00FFFF;
     --footer: #21262C;
     --botao-verde: #004B4B;
     --botao-cinza: #50565C;
-    --branco: rgba(255, 255, 255, 1);
-    --branco-80: rgba(255, 255, 255, .8);
-    --branco-50: rgba(255, 255, 255, .5);
+    --branco: #ffffff;
+    --branco-80: #ffffffcc;
+    --branco-50: #ffffff80;
     --paragrafo: #A2ACB9;
     --vermelho: #fa5e58b3;
 

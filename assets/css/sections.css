@@ -85,6 +85,7 @@
     padding: 7rem 5rem;
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 .container-texto-alternativa {
@@ -115,8 +116,38 @@
 }
 
 .card-alternativa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 13.25rem;
     background-color: var(--background-card-problema-alternativa);
     border: .05rem solid rgba(63, 73, 84, 0.1);
     border-radius: .7rem;
+    padding: 2rem;
+}
+
+.container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundaria-10);
+    width: 3rem;
+    height: 3rem;
+    border-radius: .2rem;
+}
+
+.icon-alternativa {
+    color: var(--secundaria);
+    font-size: var(--font-size-lg);
+}
+
+.card-alternativa h3 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+
+.card-alternativa p {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-sm);
+    color: var(--paragrafo);
 }

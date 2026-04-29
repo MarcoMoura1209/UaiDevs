@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: var(--background-body);
+    background-color: var(--background-escuro);
     font-family: var(--font-primary);
     padding-top: 7rem;
 }

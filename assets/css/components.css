@@ -58,3 +58,11 @@ nav ul a:hover {
     color: var(--vermelho);
     font-size: var(--font-size-xl);
 }
+
+.overlay {
+    margin-top: .5rem;
+    display: block;
+    height: .2rem;
+    width: 8%;
+    background-color: var(--vermelho);
+}

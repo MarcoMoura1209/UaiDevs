@@ -4,10 +4,13 @@
     --background-claro: #3f49541a;
     --background-card-problema: #182735;
     --background-card-problema-alternativa: #13212D;
+    --background-bloco-antes: #09141f;
+    --texto-bloco-antes: #E4EFFD;
     --primaria: #16202A;
     --secundaria: #00FFFF;
     --secundaria-10: rgba(0, 255, 255, 0.1);
     --secundaria-40: rgba(0, 255, 255, 0.4);
+    --secundaria-20: rgba(0, 255, 255, 0.2);
     --footer: #21262C;
     --botao-verde: #004B4B;
     --botao-cinza: #50565C;

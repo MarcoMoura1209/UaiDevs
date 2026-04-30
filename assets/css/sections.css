@@ -243,3 +243,73 @@
     font-weight: var(--font-weight-extra-bold);
     font-size: var(--font-size-2xl);
 }
+
+
+/* ====  ANTES E DEPOIS  ======== */
+
+
+.antes-depois {
+    padding: 6rem 5.43rem;
+    background-color: var(--background-claro);
+}
+
+.container-blocos {
+    display: flex;
+}
+
+.bloco-antes {
+    background-color: var(--background-bloco-antes);
+    
+}
+
+.bloco-antes h3 {
+    color: var(texto-bloco-antes);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.texto-antes p {
+    color: var(--texto-bloco-antes);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-regular);
+}
+
+.bloco-depois {
+    background-color: var(--background-escuro);
+    border-left: .1rem solid var(--secundaria-20);
+}
+
+.bloco-depois h3 {
+    color: var(--secundaria);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.texto-depois p {
+    color: var(--texto-bloco-antes);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.blocos {
+    width: 50%;
+    height: 18.25rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-antes, .texto-depois {
+    display: flex;
+    align-items: center;
+    gap: .15rem;
+}
+
+.icon-antes {
+    color: var(--vermelho);
+}
+
+.icon-depois {
+    color: var(--secundaria);
+}

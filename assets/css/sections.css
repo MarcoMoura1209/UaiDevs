@@ -191,3 +191,55 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-sm);
 }
+
+#nichos h2 {
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-2xl);
+}
+
+/* ========  PILARES  ======== */
+
+
+#pilares {
+    padding: 6rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-cards-pilares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.card-pilares span {
+    color: var(--secundaria-40);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.card-pilares h3{
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.card-pilares p {
+    font-size: var(--paragrafo);
+    font-weight: var(--font-weight-regular);
+    color: var(--paragrafo);
+}
+
+.card-pilares {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#pilares h2 {
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-2xl);
+}

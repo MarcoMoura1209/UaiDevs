@@ -53,7 +53,6 @@ nav ul a:hover {
     color: #005D5D;
     box-shadow: 0rem 0rem .5rem var(--secundaria);
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .overlay {

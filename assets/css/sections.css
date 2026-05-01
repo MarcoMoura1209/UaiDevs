@@ -464,7 +464,6 @@
 .feedback-card {
     display: none;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
     min-height: 15rem;
 }
 

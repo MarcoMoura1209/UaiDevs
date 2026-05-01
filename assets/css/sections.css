@@ -313,3 +313,64 @@
 .icon-depois {
     color: var(--secundaria);
 }
+
+
+/* ========  FEEDBACK  ======== */
+
+
+.feedback {
+    padding: 6rem 10.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container-feedback {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco-02);
+    border-radius: .5rem;
+}
+
+.feedback-conteudo {
+    padding: 3.62rem 8.25rem 0rem 8.25rem;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-feedback {
+    color: var(--branco);
+    font-size: var(--font-size-4xl);
+}
+
+.feedback-texto {
+    color: var(--branco-80);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-xl);
+    margin: 2rem 0rem;
+}
+
+.feedback-autor h3 {
+    color: var(--branco-80);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+}
+
+.feedback-autor p {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    color: var(--branco-80);
+}
+
+.feedback-controls {
+    display: flex;
+    justify-content: right;
+    padding: 0rem 3.37rem 3.37rem 0rem;
+}
+
+.setas {
+    color: var(--branco-80);
+    font-size: var(--font-size-md);
+}
+

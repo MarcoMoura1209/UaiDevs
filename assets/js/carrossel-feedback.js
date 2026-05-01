@@ -1,4 +1,4 @@
-class FeedbackCarrosel {
+class FeedbackCarrossel {
     constructor() {
         this.currentIndex = 0;
         this.cards = document.querySelectorAll('.feedback-card');
@@ -48,5 +48,5 @@ class FeedbackCarrosel {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new FeedbackCarrosel();
+    new FeedbackCarrossel();
 });

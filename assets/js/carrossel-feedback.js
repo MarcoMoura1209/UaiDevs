@@ -48,5 +48,5 @@ class FeedbackCarrosel {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new FeedbackCarousel();
+    new FeedbackCarrosel();
 });

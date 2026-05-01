@@ -41,6 +41,21 @@
                 "reveal": "always",
                 "panel": "new"
             }
+        },
+        {
+            "label": "pip freeze",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-Command",
+                ".\\venv\\Scripts\\pip.exe freeze | Out-File -Encoding UTF8 requirements.txt"
+            ],
+            "isBackground": false,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }

@@ -326,10 +326,12 @@
 }
 
 .container-feedback {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: var(--branco-02);
     border-radius: .5rem;
+    margin-top: 5rem;
 }
 
 .feedback-conteudo {
@@ -399,6 +401,7 @@
     width: 100%;
     justify-content: center;
     gap: 2%;
+    margin: 2rem 0rem;
 }
 
 .indicador {
@@ -442,4 +445,16 @@
 .feedback-card.active {
     display: block;
     opacity: 1;
+}
+
+.container-quotes {
+    position: absolute;
+    top: -4rem;
+    left: 3rem;
+}
+
+.icon-quote {
+    color: var(--secundaria);
+    font-weight: var(--font-weight-bold);
+    font-size: 100px;
 }

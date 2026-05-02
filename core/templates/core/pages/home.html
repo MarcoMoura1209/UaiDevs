@@ -363,15 +363,55 @@
             </div>
 
             <div class="container-form">
-                <form action="" method="post">
+                <form action="{% url 'core:home' %}" method="post">
                     {% csrf_token %}
+
                     <div class="formulario">
                         
+                        <p>
+                            <label for="id_nome">Nome Completo</label>
+                            {{ form.nome }}
+                        </p>
+                        
+                        <p>
+                            <label for="id_telefone">Telefone</label>
+                            {{ form.telefone }}
+                        </p>
+
+                        <p>
+                            <label for="id_email">E-mail</label>
+                            {{ form.email }}
+                        </p>
+
+                        <p>
+                            <label for="id_empresa">Empresa</label>
+                            {{ form.empresa }}
+                        </p>
+
+                        <p>
+                            <label for="id_mensagem">Mensagem</label>
+                            {{ form.mensagem }}
+                        </p>
+                        
+                        <button>
+                            Enviar
+                            <iconify-icon icon="octicon:paper-airplane-24"></iconify-icon>
+                        </button>
                     </div>
-                    <button><i></i></button>
+
                 </form>
             </div>
 
+            <div class="outra-opcao">
+                <span class="borda-esquerda"></span>
+                <p>ou</p>
+                <span class="borda-direita"></span>
+            </div>
+
+            <a href="#" class="link-whatsapp">
+                <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+                Chame pelo Whatsapp
+            </a>
         </section>
 
     </main>

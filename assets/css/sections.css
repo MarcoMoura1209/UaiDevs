@@ -587,3 +587,81 @@ details p{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-sm);
 }
+
+
+/* ======================================================= */
+
+/* ========  FINAL-CTA  ======== */
+
+/* ======================================================= */
+
+#contato {
+    padding: 8.75rem 8.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-form {
+    margin-top: 7.5rem;
+    margin-bottom: 2.62rem;
+    padding: 6.5rem 5.8rem;
+    background-color: var(--background-form);
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formulario p{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    all: unset;
+    background-color: transparent;
+    border-bottom: .2rem solid var(--branco-50);
+}
+
+.heading-contato h2 {
+    text-align: center;
+    font-size: var(--font-size-4xl-tight);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.outra-opcao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.outra-opcao p{
+    color: var(--branco-50);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+}
+
+.borda-esquerda {
+    height: .1rem;
+    width: 10%;
+    display: block;
+    background: linear-gradient(to right, var(--borda-escura), var(--borda-clara));
+}
+
+.borda-direita {
+    height: .1rem;
+    width: 10%;
+    display: block;
+    background: linear-gradient(to left, var(--borda-escura), var(--borda-clara));
+}

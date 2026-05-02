@@ -602,28 +602,6 @@ details p{
     align-items: center;
 }
 
-.container-form {
-    margin-top: 7.5rem;
-    margin-bottom: 2.62rem;
-    padding: 6.5rem 5.8rem;
-    background-color: var(--background-form);
-}
-
-.formulario {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.formulario p{
-    display: flex;
-    flex-direction: column;
-}
-
-.campo {
-    all: unset;
-    background-color: transparent;
-    border-bottom: .2rem solid var(--branco-50);
-}
 
 .heading-contato h2 {
     text-align: center;
@@ -688,4 +666,101 @@ details p{
 
 .link-whatsapp iconify-icon{
     font-size: var(--font-size-xl);
+}
+
+
+.container-form {
+    margin-top: 7.5rem;
+    margin-bottom: 2.62rem;
+    padding: 6.5rem 5.8rem;
+    background-color: var(--background-form);
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    column-gap: 20%;
+    row-gap: 3rem;
+}
+
+.formulario p{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario label{
+    color: var(--branco);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.campo {
+    all: unset;
+    background-color: transparent;
+    border-bottom: .2rem solid var(--branco-50);
+    transition: .3s ease-in-out;
+}
+
+.campo:focus {
+    border-bottom: .2rem solid var(--secundaria);
+}
+
+.campo-mensagem {
+    height: 1.5rem;
+    min-height: 1.5rem;
+    resize: vertical;
+}
+
+.container-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+.container-button button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--secundaria);
+    color: var(--primaria);
+    border-radius: 2rem;
+    padding: .8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    width: 45%;
+    height: auto;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    transition: .3s ease-out;
+}
+
+.container-button button:hover {
+    transform: scale(1.02);
+}
+
+.icon-button {
+    font-size: var(--font-size-lg);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--branco-50);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-md);
+}
+
+/* Compatibilidade com Firefox */
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: var(--branco-50);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-md);
+  opacity: 1; /* Firefox reduz a opacidade por padrão */
+}
+
+/* Compatibilidade com Chrome/Safari/Edge */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: var(--branco-50);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-md);
 }

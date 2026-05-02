@@ -2,15 +2,17 @@
     /* ========== CORES ========== */
     --background-escuro: #050F18;
     --background-claro: #3f49541a;
+    --background-verde: #004343;
     --background-card-problema: #182735;
     --background-card-problema-alternativa: #13212D;
     --background-bloco-antes: #09141f;
     --texto-bloco-antes: #E4EFFD;
     --primaria: #16202A;
     --secundaria: #00FFFF;
-    --secundaria-10: rgba(0, 255, 255, 0.1);
+    --secundaria-80: rgba(0, 255, 255, 0.8);
     --secundaria-40: rgba(0, 255, 255, 0.4);
     --secundaria-20: rgba(0, 255, 255, 0.2);
+    --secundaria-10: rgba(0, 255, 255, 0.1);
     --footer: #21262C;
     --botao-verde: #004B4B;
     --botao-cinza: #50565C;
@@ -18,6 +20,7 @@
     --branco-80: #ffffffcc;
     --branco-50: #ffffff80;
     --branco-02: rgba(255, 255, 255, 0.02);
+    --preto-25: rgba(0, 0, 0, 0.25);
     --paragrafo: #A2ACB9;
     --vermelho: #fa5e58b3;
 

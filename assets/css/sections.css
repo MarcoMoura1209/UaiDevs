@@ -483,3 +483,41 @@
     font-weight: var(--font-weight-bold);
     font-size: 100px;
 }
+
+
+/* ======================================================= */
+
+/* ========  FINAL-CTA  ======== */
+
+/* ======================================================= */
+
+.final-cta {
+    padding: 6rem 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-verde);
+}
+
+.final-cta h2 {
+    text-align: center;
+    font-size: var(--font-size-4xl-tight);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: 48px;
+}
+
+.final-cta a{
+    text-decoration: none;
+    color: var(--botao-verde);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-lg);
+    background-color: var(--secundaria);
+    padding: 1.5rem 3rem;
+    margin: 2.25rem 0rem;
+}
+
+.final-cta small {
+    color: var(--secundaria-80);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+}

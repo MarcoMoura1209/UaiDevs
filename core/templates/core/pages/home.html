@@ -365,45 +365,43 @@
             <div class="container-form">
                 <i class="fa-solid fa-circle circulo-1"></i>
                 <i class="fa-solid fa-circle circulo-2"></i>
-                <form action="{% url 'core:home' %}" method="post">
-                    {% csrf_token %}
-
-                    <div class="formulario">
-                        
-                        <p>
-                            <label for="id_nome">Nome Completo</label>
-                            {{ form.nome }}
-                        </p>
-                        
-                        <p>
-                            <label for="id_telefone">Telefone</label>
-                            {{ form.telefone }}
-                        </p>
-
-                        <p>
-                            <label for="id_email">E-mail</label>
-                            {{ form.email }}
-                        </p>
-
-                        <p>
-                            <label for="id_empresa">Empresa</label>
-                            {{ form.empresa }}
-                        </p>
-
-                        <p>
-                            <label for="id_mensagem">Mensagem</label>
-                            {{ form.mensagem }}
-                        </p>
-                        
-                        <div class="container-button">
-                            <button>
-                                Enviar
-                                <iconify-icon class="icon-button" icon="octicon:paper-airplane-24"></iconify-icon>
-                            </button>
+                
+                <div class="container-gradiente">
+                    <form action="{% url 'core:home' %}" method="post">
+                        {% csrf_token %}
+                        <div class="formulario">
+                    
+                            <p>
+                                <label for="id_nome">Nome Completo</label>
+                                {{ form.nome }}
+                            </p>
+                    
+                            <p>
+                                <label for="id_telefone">Telefone</label>
+                                {{ form.telefone }}
+                            </p>
+                            <p>
+                                <label for="id_email">E-mail</label>
+                                {{ form.email }}
+                            </p>
+                            <p>
+                                <label for="id_empresa">Empresa</label>
+                                {{ form.empresa }}
+                            </p>
+                            <p>
+                                <label for="id_mensagem">Mensagem</label>
+                                {{ form.mensagem }}
+                            </p>
+                    
+                            <div class="container-button">
+                                <button>
+                                    Enviar
+                                    <iconify-icon class="icon-button" icon="octicon:paper-airplane-24"></iconify-icon>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-
-                </form>
+                    </form>
+                </div>
             </div>
 
             <div class="outra-opcao">

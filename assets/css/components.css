@@ -62,3 +62,54 @@ nav ul a:hover {
     width: 8%;
     background-color: var(--vermelho);
 }
+
+
+footer {
+    width: 100%;
+    border-top: .2rem solid;
+    border-image: linear-gradient(to right, var(--borda-escura), var(--borda-clara), var(--borda-escura)) 1;
+}
+
+.conteudo-footer {
+    width: 100%;
+    padding: 4.5rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+footer ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 30%;
+    background-color: var(--branco);
+    text-decoration: none;
+}
+
+.icon-footer {
+    color: var(--primaria);
+    font-size: var(--font-size-lg);
+}
+
+footer span {
+    color: var(--branco);
+}
+
+.direitos-de-uso {
+    background-color: var(--footer);
+    padding: .7rem 3.75rem;
+}
+
+.direitos-de-uso p {
+    color: var(--branco);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-sm);
+}

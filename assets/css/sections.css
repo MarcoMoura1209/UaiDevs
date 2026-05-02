@@ -644,6 +644,7 @@ details p{
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    margin-bottom: 4rem;
 }
 
 .outra-opcao p{
@@ -664,4 +665,27 @@ details p{
     width: 10%;
     display: block;
     background: linear-gradient(to left, var(--borda-escura), var(--borda-clara));
+}
+
+.link-whatsapp {
+    color: var(--branco);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-md);
+    padding: 1rem 2.87rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: .1rem solid var(--branco);
+    border-radius: 2rem;
+    transition: .3s;
+}
+
+.link-whatsapp:hover {
+    color: var(--secundaria);
+        border: .1rem solid var(--secundaria);
+}
+
+.link-whatsapp iconify-icon{
+    font-size: var(--font-size-xl);
 }

@@ -674,6 +674,7 @@ details p{
     margin-bottom: 2.62rem;
     padding: 6.5rem 5.8rem;
     background-color: var(--background-form);
+    position: relative;
 }
 
 .formulario {
@@ -763,4 +764,21 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: var(--branco-50);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-md);
+}
+
+.circulo-1, .circulo-2 {
+    position: absolute;
+    font-size: var(--font-size-7xl);
+    color: var(--secundaria);
+    z-index: -1;
+}
+
+.circulo-1 {
+    top: -2rem;
+    left: -3rem;
+}
+
+.circulo-2 {
+    bottom: -2rem;
+    right: -3rem;
 }

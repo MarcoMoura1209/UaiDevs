@@ -25,7 +25,15 @@
 
     <header>
 
-        <img src="{% static 'img/LogoUaiDevs.png' %}" alt="Logo da Uai Devs">
+        <picture>
+
+            <source media="(max-width: 660px)" srcset="{% static 'img/LogoUaiDevs-50x.png' %}">
+
+            <source media="(max-width: 930px)" srcset="{% static 'img/LogoUaiDevs-75x.png' %}">
+
+            <img src="{% static 'img/LogoUaiDevs.png' %}" alt="Logo da Uai Devs">
+
+        </picture>
 
         <nav id="nav-menu">
             <ul>

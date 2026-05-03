@@ -35,6 +35,12 @@
 
         </picture>
 
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
         <nav id="nav-menu">
             <ul>
                 <li><a href="#solucao" class="link-nav">Solução</a></li>
@@ -453,6 +459,15 @@
         </div>
     </footer>
 
+    <script>
+        const botao = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-menu');
+
+        botao.addEventListener('click', function() {
+            nav.classList.toggle('nav-aberta');
+        });
+    </script>
+    
     <script src="{% static 'js/carrossel-feedback.js' %}"></script>
     <script src="{% static 'js/faq.js' %}"></script>
 

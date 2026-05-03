@@ -6,8 +6,8 @@
 
 #solucao {
     margin-top: .1rem;
-    height: 90vh;
-    padding: 0rem 10rem;
+    padding: 6.5rem 10.5rem;
+    padding-top: 0rem;
     width: 100%;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .container-card-problema {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     margin: 3rem 0rem;
     gap: 3rem;
@@ -314,7 +314,7 @@
 .blocos {
     width: 50%;
     height: 18.25rem;
-    padding: 3rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -358,7 +358,8 @@
 }
 
 .feedback-conteudo {
-    padding: 3.62rem 8.25rem 0rem 8.25rem;
+    padding: 3.62rem 8.25rem;
+    padding-bottom: 0rem;
     width: 100%;
     text-align: center;
 }
@@ -489,7 +490,7 @@
 
 /* ======================================================= */
 
-/* ========  FQA  ======== */
+/* ========  FAQ  ======== */
 
 /* ======================================================= */
 
@@ -593,7 +594,7 @@ details p{
 
 /* ======================================================= */
 
-/* ========  FINAL-CTA  ======== */
+/* ========  CONTATO  ======== */
 
 /* ======================================================= */
 

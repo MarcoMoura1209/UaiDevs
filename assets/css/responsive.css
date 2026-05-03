@@ -1,0 +1,153 @@
+
+@media (max-width: 1170px) {
+    .card-nicho {
+        min-height: 12rem;
+    }
+    
+    header {
+        padding: 0rem 6rem;
+    }
+
+    #solucao {
+        padding: 6.5rem 6rem;
+        padding-top: 0rem;
+    }
+}
+
+/* ===============    1024    =================== */
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        padding-top: 7.5rem;
+    }
+
+    section[id] {
+        scroll-margin-top: 7.5rem;
+    } 
+
+    .card-alternativa {
+        height: 16rem;
+    }
+
+    .container-card-alternativa div:last-child {
+        height: 13.25rem;
+    }
+}
+
+/* ===============    930    =================== */
+
+@media (max-width: 930px) {
+    .final-cta h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .container-cards-pilares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-cards-nichos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .antes-depois {
+        padding: 6rem 3rem;
+    }
+    
+    .container-blocos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocos {
+        width: 80%;
+    }
+
+
+    #faq {
+        padding: 6rem 17rem;
+    }
+
+
+    .alternativa {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .container-card-alternativa {
+        width: 100%;
+    }
+
+    .container-texto-alternativa {
+        width: 70%;
+    }
+    
+    .card-alternativa {
+        height: 13.25rem;
+    }
+}
+
+
+/* ===============    890    =================== */
+
+@media (max-width: 880px) {
+    #faq {
+        padding: 6rem 13rem;
+    }
+
+    .final-cta {
+        padding: 6rem 13rem;
+    }
+}
+
+
+/* ===============    780    =================== */
+
+@media (max-width: 780px) {
+    html {
+        font-size: 13px;
+    }
+
+    .container-card-problema {
+        flex-wrap: wrap;
+    }
+
+    .feedback-conteudo {
+        padding: 3.63 5rem;
+    }
+
+    .feedback {
+        padding: 6rem 7.5rem;
+    }
+
+    #faq {
+        padding: 6rem 10rem;
+    }
+}
+
+
+/* ===============    720    =================== */
+
+@media (max-width: 720px) {
+
+    html {
+        font-size: 12px;
+    }
+    
+    .final-cta {
+        padding: 6rem 10rem;
+    }
+}
+
+
+/* ===============    660    =================== */
+
+@media (max-width: 660px) {
+    html {
+        font-size: 11px;
+    }
+}

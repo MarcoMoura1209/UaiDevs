@@ -141,6 +141,10 @@
     .final-cta {
         padding: 6rem 10rem;
     }
+
+    .final-cta h2 {
+        line-height: var(--line-height-normal);
+    }
 }
 
 
@@ -148,6 +152,79 @@
 
 @media (max-width: 660px) {
     html {
-        font-size: 11px;
+        font-size: 10px;
+    }
+}
+
+
+/* ===============    550    =================== */
+
+@media (max-width: 550px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+
+/* ===============    450    =================== */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+
+/* ===============    400    =================== */
+
+@media (max-width: 400px) {
+    .feedback-conteudo {
+        padding: 3.63 3.5rem;
+    }
+
+    .feedback {
+        padding: 6rem 6.5rem;
+    }
+
+    #pilares {
+        padding: 6rem 5rem;
+    }
+
+    .container-cards-pilares {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-pilares {
+        max-width: 80%;
+    }
+
+    
+    #faq {
+        padding: 6rem 8rem;
+    }
+
+    .final-cta {
+        padding: 6rem 8rem;
+    }
+}
+
+
+/* ===============    370    =================== */
+
+@media (max-width: 370px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+
+/* ===============    330    =================== */
+
+@media (max-width: 370px) {
+    html {
+        font-size: 5px;
     }
 }

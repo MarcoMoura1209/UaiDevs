@@ -484,7 +484,7 @@
 .icon-quote {
     color: var(--secundaria);
     font-weight: var(--font-weight-bold);
-    font-size: 100px;
+    font-size: var(--font-size-9xl);
 }
 
 

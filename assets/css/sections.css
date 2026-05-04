@@ -768,6 +768,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-size: var(--font-size-md);
 }
 
+input.campo, textarea.campo {
+    color: var(--branco);
+}
+
 .circulo-1, .circulo-2 {
     position: absolute;
     font-size: var(--font-size-7xl);

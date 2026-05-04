@@ -89,6 +89,23 @@
     .card-alternativa {
         height: 13.25rem;
     }
+
+    #contato {
+    padding: 8.75rem 6.5rem;
+    }
+
+    .formulario {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-button {
+        justify-content: right;
+    }
+
+    .container-button button {
+        padding: .8rem 1rem;
+    }
+
 }
 
 

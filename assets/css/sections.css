@@ -686,7 +686,7 @@ details p{
     row-gap: 3rem;
 }
 
-.formulario p{
+.formulario div{
     display: flex;
     flex-direction: column;
     gap: 1rem;

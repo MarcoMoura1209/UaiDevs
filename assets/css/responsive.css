@@ -91,7 +91,7 @@
     }
 
     #contato {
-    padding: 8.75rem 6.5rem;
+        padding: 8.75rem 6.5rem;
     }
 
     .formulario {
@@ -226,6 +226,14 @@
     html {
         font-size: 10px;
     }
+
+    p, li, label, input, textarea, summary, details p {
+        font-size: 14px;
+    }
+
+    .container-gradiente {
+        padding: 4rem 3rem;
+    }
 }
 
 
@@ -235,6 +243,10 @@
     html {
         font-size: 9px;
     }
+
+    p, li, label, input, textarea, summary, details p {
+        font-size: 14px;
+    }
 }
 
 
@@ -243,6 +255,18 @@
 @media (max-width: 450px) {
     html {
         font-size: 7px;
+    }
+
+    p, li, label, input, textarea, summary, details p {
+        font-size: 14px;
+    }
+
+    #contato {
+        padding: 8.75rem 0rem;
+    }
+
+    .container-form {
+        width: 80%;
     }
 }
 
@@ -290,6 +314,10 @@
     html {
         font-size: 6px;
     }
+
+    p, li, label, input, textarea, summary, details p {
+        font-size: 14px;
+    }
 }
 
 
@@ -298,5 +326,9 @@
 @media (max-width: 370px) {
     html {
         font-size: 5px;
+    }
+
+    p, li, label, input, textarea, summary, details p {
+        font-size: 14px;
     }
 }

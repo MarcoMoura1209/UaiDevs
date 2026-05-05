@@ -61,9 +61,14 @@
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    padding: 2.5rem;
+    padding: 3rem 2.5rem;
     background-color: var(--background-card-problema);
     border-left: .2rem solid var(--vermelho);
+    transition: all .3s ease-in;
+}
+
+.card-problema:hover {
+    border-left: .2rem solid var(--vermelho-claro);
 }
 
 .icon-problema {
@@ -194,6 +199,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all .3s ease-in-out;
+    border: .05rem solid var(--background-escuro);
+}
+
+.card-nicho:hover {
+    transform: scale(1.02);
+    border: .05rem solid var(--secundaria);
 }
 
 .icon-nicho {
@@ -398,6 +410,7 @@
     color: var(--branco-80);
     font-size: var(--font-size-md);
     transition: .3s;
+    cursor: pointer;
 }
 
 .setas:hover {
@@ -520,6 +533,11 @@
     width: 100%;
     background-color: var(--background-escuro);
     padding: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.faq-item:hover {
+    transform: scale(1.01);
 }
 
 summary {
@@ -530,6 +548,7 @@ summary {
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
     list-style: none;
+    cursor: pointer;
 }
 
 summary::-webkit-details-marker {
@@ -545,6 +564,7 @@ summary::after {
 details[open] summary::after {
   content: "\f106";
 }
+
 
 details p{
     margin-top: 1rem;
@@ -583,6 +603,12 @@ details p{
     background-color: var(--secundaria);
     padding: 1.5rem 3rem;
     margin: 2.25rem 0rem;
+    transition: all .3s;
+}
+
+.final-cta a:hover {
+    transform: scale(1.01);
+    box-shadow: 0rem 0rem .5rem var(--secundaria);
 }
 
 .final-cta small {
@@ -686,7 +712,7 @@ details p{
     row-gap: 3rem;
 }
 
-.formulario div{
+.formulario div:not(.container-button) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -736,11 +762,13 @@ details p{
     height: auto;
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
-    transition: .3s ease-out;
+    transition: .3s ease-in-out;
 }
 
 .container-button button:hover {
     transform: scale(1.02);
+    box-shadow: 0rem 0rem .3rem var(--secundaria);
+
 }
 
 .icon-button {

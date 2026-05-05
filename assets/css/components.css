@@ -51,8 +51,14 @@ nav ul a:hover {
     font-size: var(--font-size-sm);
     text-decoration: none;
     color: #005D5D;
-    box-shadow: 0rem 0rem .5rem var(--secundaria);
+    box-shadow: 0rem 0rem .4rem var(--secundaria);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cta:hover {
+    transform: scale(1.01);
+    box-shadow: 0rem 0rem .7rem var(--secundaria);
 }
 
 .overlay {
@@ -92,6 +98,12 @@ footer ul a{
     border-radius: 30%;
     background-color: var(--branco);
     text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+footer ul a:hover {
+    background-color: var(--secundaria);
+    /* color: var(); */
 }
 
 .icon-footer {

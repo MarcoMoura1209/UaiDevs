@@ -2,5 +2,6 @@
 Django==6.0.4
 django-phonenumber-field==8.4.0
 phonenumbers==9.0.29
+python-decouple==3.8
 sqlparse==0.5.5
 tzdata==2026.2

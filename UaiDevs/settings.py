@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'phonenumber_field',
+    'honeypot',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'honeypot.middleware.HoneypotViewMiddleware',
 ]
 
 ROOT_URLCONF = 'UaiDevs.urls'
@@ -139,3 +141,8 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 # Cross-site request forgery (CSRF) protection ==== ATIVAR ANTES DO DEPLOY ====
 # SESSION_COOKIE_SECURE = True
 # CSRF_COOKIE_SECURE = True
+
+
+HONEYPOT_FIELD_NAME = 'fax_number'
+
+HONEYPOT_VALUE = ''

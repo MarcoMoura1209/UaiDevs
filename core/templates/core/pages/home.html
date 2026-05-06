@@ -406,7 +406,9 @@
                                 <label for="id_mensagem">Mensagem</label>
                                 {{ form.mensagem }}
                             </div>
-                    
+                            
+                            {% render_honeypot_field "fax_number" %}
+                            
                             <div class="container-button">
                                 <button>
                                     Enviar

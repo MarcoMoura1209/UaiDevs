@@ -124,6 +124,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+RATELIMIT_ENABLE = not DEBUG
+
 # Cross-site Scripting (XSS)
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True

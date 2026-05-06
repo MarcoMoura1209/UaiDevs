@@ -407,6 +407,7 @@
                                 {{ form.mensagem }}
                             </div>
                             
+                            {% load honeypot %}
                             {% render_honeypot_field "fax_number" %}
                             
                             <div class="container-button">

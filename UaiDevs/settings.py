@@ -141,7 +141,9 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 # SECURE_SSL_REDIRECT = True
 
 #  HTTP Strict Transport Security (HSTS) ==== ATIVAR ANTES DO DEPLOY ====
-# \
+# SECURE_HSTS_SECONDS = 86400
+# SECURE_HSTS_PRELOAD = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 # Cross-site request forgery (CSRF) protection ==== ATIVAR ANTES DO DEPLOY ====
 # SESSION_COOKIE_SECURE = True
@@ -151,3 +153,29 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 HONEYPOT_FIELD_NAME = 'fax_number'
 
 HONEYPOT_VALUE = ''
+
+
+# Content Security Policy (CSP)
+CSP_DEFAULT_SRC = ("'self'",)
+
+CSP_SCRIPT_SRC = (
+    "'self'",
+    "https://code.iconify.design",
+    "https://cdnjs.cloudflare.com",
+)
+
+CSP_STYLE_SRC = (
+    "'self'",
+    "https://cdnjs.cloudflare.com",
+    "https://fonts.googleapis.com",
+)
+
+CSP_FONT_SRC = (
+    "'self'",
+    "https://fonts.gstatic.com",
+    "https://cdnjs.cloudflare.com",
+)
+
+CSP_IMG_SRC = ("'self'",)
+
+CSP_REPORT_ONLY = False

@@ -14,7 +14,7 @@ from pathlib import Path
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -22,10 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
-
-DEBUG = config('DEBUG', cast=bool)
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -131,51 +127,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RATELIMIT_ENABLE = not DEBUG
-
-# Cross-site Scripting (XSS)
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
-
-# SSL redirect ==== ATIVAR ANTES DO DEPLOY ====
-# SECURE_SSL_REDIRECT = True
-
-#  HTTP Strict Transport Security (HSTS) ==== ATIVAR ANTES DO DEPLOY ====
-# SECURE_HSTS_SECONDS = 86400
-# SECURE_HSTS_PRELOAD = True
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-
-# Cross-site request forgery (CSRF) protection ==== ATIVAR ANTES DO DEPLOY ====
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-
 
 HONEYPOT_FIELD_NAME = 'fax_number'
 
 HONEYPOT_VALUE = ''
-
-
-# Content Security Policy (CSP)
-CSP_DEFAULT_SRC = ("'self'",)
-
-CSP_SCRIPT_SRC = (
-    "'self'",
-    "https://code.iconify.design",
-    "https://cdnjs.cloudflare.com",
-)
-
-CSP_STYLE_SRC = (
-    "'self'",
-    "https://cdnjs.cloudflare.com",
-    "https://fonts.googleapis.com",
-)
-
-CSP_FONT_SRC = (
-    "'self'",
-    "https://fonts.gstatic.com",
-    "https://cdnjs.cloudflare.com",
-)
-
-CSP_IMG_SRC = ("'self'",)
-
-CSP_REPORT_ONLY = False

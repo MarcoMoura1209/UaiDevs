@@ -131,3 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 HONEYPOT_FIELD_NAME = 'fax_number'
 
 HONEYPOT_VALUE = ''
+
+X_FRAME_OPTIONS = 'DENY'

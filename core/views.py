@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from .forms import Form
 from django_ratelimit.decorators import ratelimit
+from honeypot.decorators import check_honeypot
 # Create your views here.
 
-
+@check_honeypot
 @ratelimit(key='ip', rate='10/h', method='POST', block=True)
 def home(request):
     if request.method == 'POST':

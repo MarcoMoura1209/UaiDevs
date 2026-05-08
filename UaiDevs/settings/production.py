@@ -31,7 +31,7 @@ CSP_FONT_SRC = (
 
 CSP_IMG_SRC = ("'self'",)
 
-CSP_REPORT_ONLY = True
+CSP_REPORT_ONLY = False
 
 
 # Cross-site Scripting (XSS)

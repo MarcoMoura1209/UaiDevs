@@ -168,3 +168,5 @@ LOGGING = {
         },
     },
 }
+
+PHONENUMBER_DEFAULT_REGION = "BR"

@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Cliente
+from ..models import Cliente
 
 
 class ClientModelTest(TestCase):
@@ -16,3 +16,11 @@ class ClientModelTest(TestCase):
 
     def test_cliente_criado_com_sucesso(self):
         self.assertEqual(Cliente.objects.count(), 1)
+
+    def test_nome_salvado_corretamente(self):
+        self.assertEqual(self.cliente.nome, 'Homem Teste')
+
+    def test_str_retorna_nome_do_cliente(self):
+        self.assertEqual(str(self.cliente), 'Homem Teste')
+
+    

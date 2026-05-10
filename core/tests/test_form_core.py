@@ -113,3 +113,60 @@ class FormTest(TestCase):
         form = Form(data=dados)
         self.assertTrue(form.is_valid())
         self.assertNotIn('mensagem', form.errors)
+
+    def test_email_invalido_com_formatacao_errada(self):
+        '''Email formatados incorretamente nao devem ser aceitos'''
+
+        dados = {
+            'nome':'Homem Teste',
+            'email':'email-sem-arroba-gmail.com',
+            'mensagem':'Ola, gostaria de conversar com voce',
+            'telefone':'11999999999',
+            'empresa':'Empresa Teste',
+        }
+        form = Form(data=dados)
+        self.assertFalse(form.is_valid())
+        self.assertIn('email', form.errors)
+
+    def test_telefone_invalido_com_formatacao_errada(self):
+        '''telefone formatado incorretamente deve ser rejeitado'''
+
+        dados = {
+            'nome':'Homem Teste',
+            'email':'homemteste@gmail.com',
+            'mensagem':'Ola, gostaria de conversar com voces',
+            'telefone':'123',
+            'empresa':'Empresa Teste',
+        }
+        form = Form(data=dados)
+        self.assertFalse(form.is_valid())
+        self.assertIn('telefone', form.errors)
+
+    def test_valido_com_formatacao_correta(self):
+        '''Telefone formatado corretamente deve ser aceito'''
+
+        dados = {
+            'nome':'Homem Teste',
+            'email':'homemteste@gmail.com',
+            'mensagem':'Ola, gostaria de conversar com voces',
+            'telefone':'11999999999',
+            'empresa':'Empresa Teste',
+        }
+        form = Form(data=dados)
+        self.assertTrue(form.is_valid())
+        self.assertNotIn('telefone', form.errors)
+
+    def test_funcao_clean_mensagem_para_mensagem_acima_de_1500_caracteres(self):
+        '''A funcao nao deve perimitir mensagens acima de 1500 caracteres'''
+
+        dados = {
+            'nome':'Homem Teste',
+            'email':'homemteste@gmail.com',
+            'mensagem':'x' * 1501,
+            'telefone':'11999999999',
+            'empresa':'Empresa Teste',
+        }
+        form = Form(data=dados)
+        self.assertFalse(form.is_valid())
+        self.assertIn('mensagem', form.errors)
+        self.assertIn('máximo 1500', str(form.errors['mensagem']))

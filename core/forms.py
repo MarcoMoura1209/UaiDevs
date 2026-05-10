@@ -30,6 +30,13 @@ class Form(forms.ModelForm):
                 'placeholder': 'Nome da empresa'})
         }
 
+        error_messages = {
+            'mensagem': {
+                'max_length': 'A mensagem deve ter no máximo 1500 caracteres.'
+            }
+        }
+
+
     def clean_mensagem(self):
         mensagem = self.cleaned_data.get('mensagem')
         if len(mensagem) > 1500:

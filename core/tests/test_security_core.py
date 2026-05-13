@@ -58,3 +58,19 @@ class CsrfTest(TestCase):
             self.url, dados, HTTP_X_CSRFTOKEN=csrf_token
         )
         self.assertEqual(response.status_code, 302)
+
+
+class CspHeaderTest(TestCase):
+    def setUp(self):
+        self.client = Client()
+        self.url = reverse('core:home')
+
+    def test_csp_header_presente_na_resposta(self):
+        response = self.client.get(self.url)
+        self.assertIn('Content-Security-Policy', response)
+
+    def test_csp_header_nao_vazio(self):
+        response = self.client.get(self.url)
+        csp_header = response.get('Content-Security-Policy')
+        self.assertIsNotNone(csp_header)
+        self.assertTrue(len(csp_header) > 0)

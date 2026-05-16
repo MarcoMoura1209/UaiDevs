@@ -36,17 +36,18 @@ INSTALLED_APPS = [
     'core',
     'phonenumber_field',
     'honeypot',
+    'csp',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'csp.middleware.CSPMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'csp.middleware.CSPMiddleware',
 ]
 
 ROOT_URLCONF = 'UaiDevs.urls'
@@ -172,27 +173,26 @@ LOGGING = {
 PHONENUMBER_DEFAULT_REGION = "BR"
 
 # Content Security Policy (CSP)
-CSP_DEFAULT_SRC = ("'self'",)
+CONTENT_SECURITY_POLICY_REPORT_ONLY = {
+    'DIRECTIVES': {
+        'default-src': ("'self'",),
+        'script-src': (
+            "'self'",
+            "https://code.iconify.design",
+            "https://cdnjs.cloudflare.com",
+        ),
+        'style-src': (
+            "'self'",
+            "https://cdnjs.cloudflare.com",
+            "https://fonts.googleapis.com",
+        ),
+        'font-src': (
+            "'self'",
+            "https://fonts.gstatic.com",
+            "https://cdnjs.cloudflare.com",
+        ),
+        'img-src': ("'self'",),
+    }
+}
 
-CSP_SCRIPT_SRC = (
-    "'self'",
-    "https://code.iconify.design",
-    "https://cdnjs.cloudflare.com",
-)
-
-CSP_STYLE_SRC = (
-    "'self'",
-    "https://cdnjs.cloudflare.com",
-    "https://fonts.googleapis.com",
-)
-
-CSP_FONT_SRC = (
-    "'self'",
-    "https://fonts.gstatic.com",
-    "https://cdnjs.cloudflare.com",
-)
-
-CSP_IMG_SRC = ("'self'",)
-
-
-
+CSP_REPORT_ONLY = True

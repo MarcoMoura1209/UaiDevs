@@ -28,7 +28,7 @@ CSP_REPORT_ONLY = False
 LOGGING['handlers']['file'] = {
     'level': 'WARNING',
     'class': 'logging.handlers.RotatingFileHandler',
-    'filename': '/var/log/django/core.log', # Lembre-se de dar permissão de escrita nesta pasta!
+    'filename': '/var/log/django/core.log', # Lembrar-se de dar permissão de escrita nesta pasta!
     'maxBytes': 1024 * 1024 * 15,
     'backupCount': 5,
     'formatter': 'verbose',

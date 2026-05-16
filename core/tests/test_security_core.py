@@ -68,4 +68,6 @@ class CSPTeste(TestCase):
 
     def test_csp_header_presente_na_resposta(self):
         response = self.client.get(self.url)
-        self.assertIn('Content-Security-Policy-Report-Only', response)
+        self.assertIsNotNone(response.get(
+            'Content-Security-Policy-Report-Only'
+        ))

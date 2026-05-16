@@ -170,3 +170,29 @@ LOGGING = {
 }
 
 PHONENUMBER_DEFAULT_REGION = "BR"
+
+# Content Security Policy (CSP)
+CSP_DEFAULT_SRC = ("'self'",)
+
+CSP_SCRIPT_SRC = (
+    "'self'",
+    "https://code.iconify.design",
+    "https://cdnjs.cloudflare.com",
+)
+
+CSP_STYLE_SRC = (
+    "'self'",
+    "https://cdnjs.cloudflare.com",
+    "https://fonts.googleapis.com",
+)
+
+CSP_FONT_SRC = (
+    "'self'",
+    "https://fonts.gstatic.com",
+    "https://cdnjs.cloudflare.com",
+)
+
+CSP_IMG_SRC = ("'self'",)
+
+
+

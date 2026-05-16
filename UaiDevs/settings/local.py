@@ -6,6 +6,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 RATELIMIT_ENABLE = False
 
+CSP_REPORT_ONLY = True
+
 LOGGING = copy.deepcopy(LOGGING)
 
 LOGGING['handlers']['file'] = {

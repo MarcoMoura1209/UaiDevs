@@ -194,5 +194,3 @@ CONTENT_SECURITY_POLICY_REPORT_ONLY = {
         'img-src': ("'self'",),
     }
 }
-
-CSP_REPORT_ONLY = True

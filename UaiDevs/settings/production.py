@@ -23,7 +23,27 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-CSP_REPORT_ONLY = False
+CONTENT_SECURITY_POLICY = {
+    'DIRECTIVES': {
+        'default-src': ("'self'",),
+        'script-src': (
+            "'self'",
+            "https://code.iconify.design",
+            "https://cdnjs.cloudflare.com",
+        ),
+        'style-src': (
+            "'self'",
+            "https://cdnjs.cloudflare.com",
+            "https://fonts.googleapis.com",
+        ),
+        'font-src': (
+            "'self'",
+            "https://fonts.gstatic.com",
+            "https://cdnjs.cloudflare.com",
+        ),
+        'img-src': ("'self'",),
+    }
+}
 
 LOGGING['handlers']['file'] = {
     'level': 'WARNING',

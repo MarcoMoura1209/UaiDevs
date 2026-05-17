@@ -8,6 +8,10 @@ RATELIMIT_ENABLE = False
 
 CSP_REPORT_ONLY = True
 
+# SSL redirect
+SECURE_SSL_REDIRECT = False
+
+
 LOGGING = copy.deepcopy(LOGGING)
 
 LOGGING['handlers']['file'] = {

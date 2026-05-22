@@ -7,11 +7,11 @@ class FormTest(TestCase):
         '''Formulario com dados validos deve ser aceito'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertTrue(form.is_valid())
@@ -20,11 +20,11 @@ class FormTest(TestCase):
         '''Form deve apontar erro para campo nome vazio'''
 
         dados = {
-            'nome':'',
-            'email':'homemteste@gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': '',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -34,11 +34,11 @@ class FormTest(TestCase):
         '''Form deve apontar erro para campo email vazio'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': '',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -48,11 +48,11 @@ class FormTest(TestCase):
         '''Form deve apontar erro para campo mensagem vazio'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'',
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': '',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -62,11 +62,11 @@ class FormTest(TestCase):
         '''Form deve apontar erro para campo telefone vazio'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -76,11 +76,11 @@ class FormTest(TestCase):
         '''Form deve apontar erro para campo empresa vazio'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'11999999999',
-            'empresa':'',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '11999999999',
+            'empresa': '',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -90,11 +90,11 @@ class FormTest(TestCase):
         '''Mensagens acimas de 1500 caracteres devem ser rejeitados'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'x' * 1501,
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'x' * 1501,
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -104,11 +104,11 @@ class FormTest(TestCase):
         '''Mensagens com exatos 1500 caracteres devem ser aceitos'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'x' * 1500,
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'x' * 1500,
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertTrue(form.is_valid())
@@ -118,11 +118,11 @@ class FormTest(TestCase):
         '''Email formatados incorretamente nao devem ser aceitos'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'email-sem-arroba-gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voce',
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'email-sem-arroba-gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voce',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -132,11 +132,11 @@ class FormTest(TestCase):
         '''telefone formatado incorretamente deve ser rejeitado'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'123',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '123',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())
@@ -146,11 +146,11 @@ class FormTest(TestCase):
         '''Telefone formatado corretamente deve ser aceito'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'Ola, gostaria de conversar com voces',
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Ola, gostaria de conversar com voces',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertTrue(form.is_valid())
@@ -160,11 +160,11 @@ class FormTest(TestCase):
         '''A funcao nao deve perimitir mensagens acima de 1500 caracteres'''
 
         dados = {
-            'nome':'Homem Teste',
-            'email':'homemteste@gmail.com',
-            'mensagem':'x' * 1501,
-            'telefone':'11999999999',
-            'empresa':'Empresa Teste',
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'x' * 1501,
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
         }
         form = Form(data=dados)
         self.assertFalse(form.is_valid())

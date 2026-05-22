@@ -142,7 +142,7 @@ class FormTest(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('telefone', form.errors)
 
-    def test_valido_com_formatacao_correta(self):
+    def test_campo_telefone_valido_com_formatacao_correta(self):
         '''Telefone formatado corretamente deve ser aceito'''
 
         dados = {

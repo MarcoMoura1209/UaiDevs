@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'core',
     'phonenumber_field',
     'honeypot',
-    'csp',
 ]
 
 MIDDLEWARE = [

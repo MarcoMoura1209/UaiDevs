@@ -1,4 +1,5 @@
-<img width="321" height="28" alt="LogoUaiDevs" src="https://github.com/user-attachments/assets/16b258b5-ef32-4b1b-8944-23dad06b04c8" />
+<img src="assets/img/LogoUaiDevs.png" width="600" alt="Logo da Uai devs">
+
 # Uaidevs Landing Page
 
 Landing page desenvolvida para a empresa Uaidevs, focada em automação de atendimento através de agentes inteligentes integrados ao WhatsApp e sistemas CRM.

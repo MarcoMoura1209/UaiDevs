@@ -27,7 +27,10 @@
 
 <body>
 
-    <header>
+    <!-- Link para pular para conteúdo principal (acessibilidade) -->
+    <a href="#solucao" class="skip-to-main-content">Pular para conteúdo principal</a>
+
+    <header role="banner">
 
         <picture>
 
@@ -39,13 +42,13 @@
 
         </picture>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
         
-        <nav id="nav-menu">
+        <nav id="nav-menu" aria-label="Menu de navegação principal" aria-hidden="true">
             <ul>
                 <li><a href="#solucao" class="link-nav">Solução</a></li>
                 <li><a href="#nichos" class="link-nav">Nichos</a></li>
@@ -76,7 +79,7 @@
             </div>
             <div class="container-card-problema">
                 <div class="card-problema">
-                    <iconify-icon class="icon-problema" icon="uil:stopwatch-slash"></iconify-icon>
+                    <iconify-icon class="icon-problema" icon="uil:stopwatch-slash" aria-hidden="true"></iconify-icon>
                     <h3>Lead não espera</h3>
                     <p>
                         5 minutos é o limite. Após isso, a chance de conversão cai 400% enquanto seu concorrente
@@ -84,14 +87,14 @@
                     </p>
                 </div>
                 <div class="card-problema">
-                    <iconify-icon class="icon-problema" icon="fa7-solid:user-slash"></iconify-icon>
+                    <iconify-icon class="icon-problema" icon="fa7-solid:user-slash" aria-hidden="true"></iconify-icon>
                     <h3>Fadiga humana</h3>
                     <p>
                         Sua equipe dorme, almoça e cansa. O lead chega às 23h e só é atendido às 09h do dia seguinte.
                     </p>
                 </div>
                 <div class="card-problema">
-                    <iconify-icon class="icon-problema" icon="boxicons:robot"></iconify-icon>
+                    <iconify-icon class="icon-problema" icon="boxicons:robot" aria-hidden="true"></iconify-icon>
                     <h3>Robôs limitados</h3>
                     <p>
                         Chatbots tradicionais irritam o cliente com menus engessados. A falta de contexto mata o
@@ -115,7 +118,7 @@
             <div class="container-card-alternativa">
                 <div class="card-alternativa">
                     <div class="container-icon">
-                        <iconify-icon class="icon-alternativa" icon="mdi:head-cog-outline"></iconify-icon>
+                        <iconify-icon class="icon-alternativa" icon="mdi:head-cog-outline" aria-hidden="true"></iconify-icon>
                     </div>
 
                     <h3>Memória e contexto</h3>
@@ -126,7 +129,7 @@
                 </div>
                 <div class="card-alternativa">
                     <div class="container-icon">
-                        <i class="fa-solid fa-fingerprint icon-alternativa"></i>
+                        <i class="fa-solid fa-fingerprint icon-alternativa" aria-hidden="true"></i>
                     </div>
 
                     <h3>Personalidade customizada</h3>
@@ -136,7 +139,7 @@
                 </div>
                 <div class="card-alternativa">
                     <div class="container-icon">
-                        <i class="fa-solid fa-bolt-lightning icon-alternativa"></i>
+                        <i class="fa-solid fa-bolt-lightning icon-alternativa" aria-hidden="true"></i>
                     </div>
 
                     <h3>Ação real</h3>
@@ -149,34 +152,34 @@
         </section>
 
 
-        <section id="nichos">
+        <section id="nichos" aria-label="Indústrias atendidas">
             <h2>INDÚSTRIAS DE ALTA PERFORMANCE</h2>
             <div class="container-cards-nichos">
                 <div class="card-nicho">
-                    <iconify-icon class="icon-nicho" icon="ic:outline-real-estate-agent"></iconify-icon>
+                    <iconify-icon class="icon-nicho" icon="ic:outline-real-estate-agent" aria-hidden="true"></iconify-icon>
                     <h3>Imobiliárias & Veículos</h3>
                 </div>
                 <div class="card-nicho">
-                    <i class="fa-solid fa-briefcase-medical icon-nicho"></i>
+                    <i class="fa-solid fa-briefcase-medical icon-nicho" aria-hidden="true"></i>
                     <h3>Saúde & Clínicas</h3>
                 </div>
                 <div class="card-nicho">
-                    <iconify-icon class="icon-nicho" icon="material-symbols:hub-outline"></iconify-icon>
+                    <iconify-icon class="icon-nicho" icon="material-symbols:hub-outline" aria-hidden="true"></iconify-icon>
                     <h3>SaaS & B2B</h3>
                 </div>
                 <div class="card-nicho">
-                    <i class="fa-solid fa-bag-shopping icon-nicho"></i>
+                    <i class="fa-solid fa-bag-shopping icon-nicho" aria-hidden="true"></i>
                     <h3>E-commerce & Varejo</h3>
                 </div>
                 <div class="card-nicho">
-                    <i class="fa-solid fa-graduation-cap icon-nicho"></i>
+                    <i class="fa-solid fa-graduation-cap icon-nicho" aria-hidden="true"></i>
                     <h3>Educação</h3>
                 </div>
             </div>
         </section>
 
 
-        <section id="pilares">
+        <section id="pilares" aria-label="Os 4 pilares de nossa engenharia">
             <h2>OS 4 PILARES DA NOSSA ENGENHARIA</h2>
             <div class="container-cards-pilares">
                 <div class="card-pilares">
@@ -215,21 +218,21 @@
         </section>
 
 
-        <section class="antes-depois">
+        <section class="antes-depois" aria-label="Comparação antes e depois">
             <div class="container-blocos">
                 <div class="blocos bloco-antes">
 
                     <h3>ONTEM</h3>
                     <div class="texto-antes">
-                        <i class="fa-regular fa-circle-xmark icon-antes"></i>
+                        <i class="fa-regular fa-circle-xmark icon-antes" aria-hidden="true"></i>
                         <p>Resposta lenta (média de 4 horas)</p>
                     </div>
                     <div class="texto-antes">
-                        <i class="fa-regular fa-circle-xmark icon-antes"></i>
+                        <i class="fa-regular fa-circle-xmark icon-antes" aria-hidden="true"></i>
                         <p>Equipe sobrecarregada com tarefas repetitivas</p>
                     </div>
                     <div class="texto-antes">
-                        <i class="fa-regular fa-circle-xmark icon-antes"></i>
+                        <i class="fa-regular fa-circle-xmark icon-antes" aria-hidden="true"></i>
                         <p>Leads perdidos por falta de acompanhamento</p>
                     </div>
                 </div>
@@ -238,15 +241,15 @@
                     <h3>HOJE</h3>
 
                     <div class="texto-depois">
-                        <i class="fa-regular fa-circle-check icon-depois"></i>
+                        <i class="fa-regular fa-circle-check icon-depois" aria-hidden="true"></i>
                         <p>Resposta em segundos (24h por dia)</p>
                     </div>
                     <div class="texto-depois">
-                        <i class="fa-regular fa-circle-check icon-depois"></i>
+                        <i class="fa-regular fa-circle-check icon-depois" aria-hidden="true"></i>
                         <p>Automação inteligente de ponta a ponta</p>
                     </div>
                     <div class="texto-depois">
-                        <i class="fa-regular fa-circle-check icon-depois"></i>
+                        <i class="fa-regular fa-circle-check icon-depois" aria-hidden="true"></i>
                         <p>Leads qualificados entregues no CRM</p>
                     </div>
                 </div>
@@ -254,7 +257,7 @@
         </section>
 
 
-        <section class="feedback">
+        <section class="feedback" aria-label="Feedback de clientes">
 
             <div class="heading-feedback">
                 <span class="badge-verde">O que nossos clientes estão dizendo?</span>
@@ -264,14 +267,14 @@
             <div class="container-feedback">
 
                 <div class="container-quotes">
-                    <iconify-icon class="icon-quote" icon="fa-solid:quote-left"></iconify-icon>
+                    <iconify-icon class="icon-quote" icon="fa-solid:quote-left" aria-hidden="true"></iconify-icon>
                 </div>
 
-                <div class="carrossel-feedback">
+                <div class="carrossel-feedback" role="region" aria-label="Carrossel de depoimentos de clientes">
 
                     <div class="feedback-card active" data-index="0">
                         <div class="feedback-conteudo">
-                            <iconify-icon class="icon-feedback" icon="mdi:user-circle-outline"></iconify-icon>
+                            <iconify-icon class="icon-feedback" icon="mdi:user-circle-outline" aria-hidden="true"></iconify-icon>
 
                             <p class="feedback-texto">
                                 Implementamos a solução da UaiDevs e conseguimos reduzir o tempo de resposta para 
@@ -289,7 +292,7 @@
 
                     <div class="feedback-card" data-index="1">
                         <div class="feedback-conteudo">
-                            <iconify-icon class="icon-feedback" icon="mdi:user-circle-outline"></iconify-icon>
+                            <iconify-icon class="icon-feedback" icon="mdi:user-circle-outline" aria-hidden="true"></iconify-icon>
 
                             <p class="feedback-texto">
                                 Éramos caóticos com leads vindos de múltiplos canais. A automação da UaiDevs 
@@ -307,7 +310,7 @@
 
                     <div class="feedback-card" data-index="2">
                         <div class="feedback-conteudo">
-                            <iconify-icon class="icon-feedback" icon="mdi:user-circle-outline"></iconify-icon>
+                            <iconify-icon class="icon-feedback" icon="mdi:user-circle-outline" aria-hidden="true"></iconify-icon>
 
                             <p class="feedback-texto">
                                 No mercado imobiliário, timing é tudo. Muita gente desiste rápido se não consegue 
@@ -324,11 +327,11 @@
                 </div>
 
                 <div class="feedback-controls">
-                    <button class="feedback-btn feedback-prev">
-                        <iconify-icon class="setas" icon="formkit:arrowleft"></iconify-icon>
+                    <button class="feedback-btn feedback-prev" aria-label="Depoimento anterior">
+                        <iconify-icon class="setas" icon="formkit:arrowleft" aria-hidden="true"></iconify-icon>
                     </button>
-                    <button class="feedback-btn feedback-next">
-                        <iconify-icon class="setas" icon="formkit:arrowright"></iconify-icon>
+                    <button class="feedback-btn feedback-next" aria-label="Próximo depoimento">
+                        <iconify-icon class="setas" icon="formkit:arrowright" aria-hidden="true"></iconify-icon>
                     </button>
                 </div>
 
@@ -342,7 +345,7 @@
         </section>
 
 
-        <section id="faq">
+        <section id="faq" aria-label="Perguntas frequentes">
             <h2>Perguntas Frequentes</h2>
 
             <div class="faq-container">
@@ -398,47 +401,47 @@
         </section>
 
 
-        <section class="final-cta">
+        <section class="final-cta" aria-label="Chamada para ação final">
             <h2>Sua empresa está pronta para escalar sem aumentar o custo fixo?</h2>
             <a href="https://wa.me/5538998412071">QUERO CONTRATAR MEU AGENTE DIGITAL</a>
             <small>Receba um diagnóstico gratuito para o seu negócio</small>
         </section>
 
 
-        <section id="contato">
+        <section id="contato" aria-label="Formulário de contato">
             <div class="heading-contato">
                 <span class="badge-verde">Venha fazer o seu orçamento!</span>
                 <h2>Entre em Contato</h2>
             </div>
 
             <div class="container-form">
-                <i class="fa-solid fa-circle circulo-1"></i>
-                <i class="fa-solid fa-circle circulo-2"></i>
+                <i class="fa-solid fa-circle circulo-1" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle circulo-2" aria-hidden="true"></i>
                 
                 <div class="container-gradiente">
-                    <form action="{% url 'core:home' %}" method="post">
+                    <form action="{% url 'core:home' %}" method="post" aria-label="Formulário de contato e orçamento">
                         {% csrf_token %}
                         <div class="formulario">
                     
                             <div>
-                                <label for="id_nome">Nome Completo</label>
+                                <label for="id_nome">Nome Completo <span aria-label="obrigatório">*</span></label>
                                 {{ form.nome }}
                             </div>
                     
                             <div>
-                                <label for="id_telefone">Telefone</label>
+                                <label for="id_telefone">Telefone <span aria-label="obrigatório">*</span></label>
                                 {{ form.telefone }}
                             </div>
                             <div>
-                                <label for="id_email">E-mail</label>
+                                <label for="id_email">E-mail <span aria-label="obrigatório">*</span></label>
                                 {{ form.email }}
                             </div>
                             <div>
-                                <label for="id_empresa">Empresa</label>
+                                <label for="id_empresa">Empresa <span aria-label="obrigatório">*</span></label>
                                 {{ form.empresa }}
                             </div>
                             <div>
-                                <label for="id_mensagem">Mensagem</label>
+                                <label for="id_mensagem">Mensagem <span aria-label="obrigatório">*</span></label>
                                 {{ form.mensagem }}
                             </div>
                             
@@ -446,9 +449,9 @@
                             {% render_honeypot_field "fax_number" %}
                             
                             <div class="container-button">
-                                <button>
+                                <button type="submit" aria-label="Enviar formulário de contato">
                                     Enviar
-                                    <iconify-icon class="icon-button" icon="octicon:paper-airplane-24"></iconify-icon>
+                                    <iconify-icon class="icon-button" icon="octicon:paper-airplane-24" aria-hidden="true"></iconify-icon>
                                 </button>
                             </div>
                         </div>
@@ -462,15 +465,15 @@
                 <span class="borda-direita"></span>
             </div>
 
-            <a href="https://wa.me/5538998412071" class="link-whatsapp" target="_blank" rel="noopener">
-                <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+            <a href="https://wa.me/5538998412071" class="link-whatsapp" target="_blank" rel="noopener" aria-label="Entre em contato pelo WhatsApp - abre em nova aba">
+                <iconify-icon icon="ic:baseline-whatsapp" aria-hidden="true"></iconify-icon>
                 Chame pelo Whatsapp
             </a>
         </section>
 
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-label="Rodapé">
         <div class="conteudo-footer">
             <picture>
 
@@ -482,22 +485,22 @@
 
             </picture>
 
-            <ul>
+            <ul aria-label="Redes sociais">
                 {% comment %} linkedin {% endcomment %}
-                <li><a href="https://www.linkedin.com/company/uaidevs?trk=blended-typeahead" class="link-footer" target="_blank">
-                        <iconify-icon class="icon-footer" icon="ri:linkedin-fill"></iconify-icon>
+                <li><a href="https://www.linkedin.com/company/uaidevs?trk=blended-typeahead" class="link-footer" target="_blank" rel="noopener" title="Visite nossa página no LinkedIn" aria-label="LinkedIn UaiDevs - abre em nova aba">
+                        <iconify-icon class="icon-footer" icon="ri:linkedin-fill" aria-hidden="true"></iconify-icon>
                 </a></li>
                 {% comment %} Whatsapp {% endcomment %}
-                <li><a href="https://wa.me/5538998412071" class="link-footer" target="_blank" rel="noopener">
-                        <iconify-icon class="icon-footer" icon="ic:baseline-whatsapp"></iconify-icon>
+                <li><a href="https://wa.me/5538998412071" class="link-footer" target="_blank" rel="noopener" title="Entre em contato pelo WhatsApp" aria-label="WhatsApp UaiDevs - abre em nova aba">
+                        <iconify-icon class="icon-footer" icon="ic:baseline-whatsapp" aria-hidden="true"></iconify-icon>
                 </a></li>
                 {% comment %} Instagram {% endcomment %}
-                <li><a href="https://www.instagram.com/uaidevs/" class="link-footer" target="_blank">
-                        <iconify-icon class="icon-footer" icon="mdi:instagram"></iconify-icon>
+                <li><a href="https://www.instagram.com/uaidevs/" class="link-footer" target="_blank" rel="noopener" title="Visite nossa página no Instagram" aria-label="Instagram UaiDevs - abre em nova aba">
+                        <iconify-icon class="icon-footer" icon="mdi:instagram" aria-hidden="true"></iconify-icon>
                 </a></li>
                 {% comment %} Email {% endcomment %}
-                <li><a href="#" class="link-footer" target="_blank">
-                        <iconify-icon class="icon-footer" icon="ic:outline-email"></iconify-icon>
+                <li><a href="mailto:contato@uaidevs.com.br" class="link-footer" title="Envie um e-mail para nós" aria-label="Enviar e-mail para UaiDevs">
+                        <iconify-icon class="icon-footer" icon="ic:outline-email" aria-hidden="true"></iconify-icon>
                     </a></li>
             </ul>
         </div>

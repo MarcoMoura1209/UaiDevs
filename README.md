@@ -23,6 +23,9 @@ O projeto foi desenvolvido durante meu estágio utilizando Django Templates no b
 - Integração com banco de dados PostgreSQL
 - Sistema desenvolvido com Django Templates
 
+## Estrutura do projeto
+
+```bash
 ├── UaiDevs  
 │   ├── settings  
 │   │   ├── __init__.py  
@@ -76,6 +79,7 @@ O projeto foi desenvolvido durante meu estágio utilizando Django Templates no b
 ├── manage.py  
 ├── pytest.ini  
 └── requirements.txt  
+```
 
 ## Como executar o projeto
 

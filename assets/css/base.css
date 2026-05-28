@@ -17,6 +17,12 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    aspect-ratio: auto; /* Preserva proporção da imagem */
+    display: block; /* Remove espaço em branco embaixo */
+}
+
+picture {
+    display: block;
 }
 
 h1, h2, h3, h4 {

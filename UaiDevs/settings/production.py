@@ -1,9 +1,10 @@
 from .base import *
+from decouple import config, Csv
 
 
-DEBUG=False
+DEBUG = False
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 RATELIMIT_ENABLE = True
 

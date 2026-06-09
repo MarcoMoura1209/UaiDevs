@@ -175,6 +175,9 @@ PHONENUMBER_DEFAULT_REGION = "BR"
 CONTENT_SECURITY_POLICY_REPORT_ONLY = {
     'DIRECTIVES': {
         'default-src': ("'self'",),
+        'style-src-attr': (
+            "'unsafe-inline'",
+        ),
         'script-src': (
             "'self'",
             "https://code.iconify.design",
@@ -184,6 +187,7 @@ CONTENT_SECURITY_POLICY_REPORT_ONLY = {
             "'self'",
             "https://cdnjs.cloudflare.com",
             "https://fonts.googleapis.com",
+            "'sha256-1P/+Nxe2LOgGHeWU2DfZCy0GyvoKMbFONJnW+b9rWP4='",
         ),
         'font-src': (
             "'self'",

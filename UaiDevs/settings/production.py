@@ -27,6 +27,9 @@ CSRF_COOKIE_SECURE = True
 CONTENT_SECURITY_POLICY = {
     'DIRECTIVES': {
         'default-src': ("'self'",),
+        'style-src-attr': (
+            "'unsafe-inline'",
+        ),
         'script-src': (
             "'self'",
             "https://code.iconify.design",
@@ -36,6 +39,7 @@ CONTENT_SECURITY_POLICY = {
             "'self'",
             "https://cdnjs.cloudflare.com",
             "https://fonts.googleapis.com",
+            "'sha256-1P/+Nxe2LOgGHeWU2DfZCy0GyvoKMbFONJnW+b9rWP4='",
         ),
         'font-src': (
             "'self'",

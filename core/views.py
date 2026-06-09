@@ -5,6 +5,7 @@ from django.views.decorators.http import require_http_methods
 from .forms import Form
 from django_ratelimit.decorators import ratelimit
 from honeypot.decorators import check_honeypot
+from django.conf import settings
 
 
 logger = logging.getLogger('core')
@@ -51,13 +52,14 @@ def sitemap(request):
 @require_http_methods(["GET"])
 def robots(request):
     """Gera e serve o robots.txt dinamicamente"""
+    admin_url = getattr(settings, 'ADMIN_URL', 'admin/')
     robots_content = '''User-agent: *
 Allow: /
 
-Disallow: /admin/
+Disallow: /{admin_url}/
 Disallow: /static/
 Disallow: /media/
- 
+
 Sitemap: https://uaidevs.com.br/sitemap.xml
 '''
 

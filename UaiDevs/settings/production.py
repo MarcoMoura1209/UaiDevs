@@ -1,6 +1,11 @@
+import os
+from pathlib import Path
+from csp.constants import UNSAFE_HASHES
+from decouple import Csv, config
 from .base import *
-from decouple import config, Csv
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
 DEBUG = False
 
@@ -14,6 +19,8 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 
 # SSL redirect
 SECURE_SSL_REDIRECT = True
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 #  HTTP Strict Transport Security (HSTS)
 SECURE_HSTS_SECONDS = 86400

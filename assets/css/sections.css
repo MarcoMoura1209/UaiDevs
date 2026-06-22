@@ -5,6 +5,8 @@
 /* ======================================================= */
 
 #solucao {
+    display: flex;
+    align-items: center;
     margin-top: .1rem;
     padding: 6.5rem 10.5rem;
     padding-top: 0rem;

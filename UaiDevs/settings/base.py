@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+from csp.constants import UNSAFE_HASHES
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -119,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'assets',
@@ -176,9 +177,6 @@ PHONENUMBER_DEFAULT_REGION = "BR"
 CONTENT_SECURITY_POLICY_REPORT_ONLY = {
     'DIRECTIVES': {
         'default-src': ("'self'",),
-        'style-src-attr': (
-            "'unsafe-inline'",
-        ),
         'script-src': (
             "'self'",
             "https://code.iconify.design",
@@ -186,9 +184,11 @@ CONTENT_SECURITY_POLICY_REPORT_ONLY = {
         ),
         'style-src': (
             "'self'",
+            UNSAFE_HASHES,
+            "'sha256-1P/+Nxe2LOgGHeWU2DfZCy0GyvoKMbFONJnW+b9rWP4='",
+            "'sha256-l+LQCZo1PCpc6+cP1IqeAjOu62qLmYkCdGNc9KErS/o='",
             "https://cdnjs.cloudflare.com",
             "https://fonts.googleapis.com",
-            "'sha256-1P/+Nxe2LOgGHeWU2DfZCy0GyvoKMbFONJnW+b9rWP4='",
         ),
         'font-src': (
             "'self'",

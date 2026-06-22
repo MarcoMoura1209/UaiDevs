@@ -1,4 +1,5 @@
 import logging
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views.decorators.http import require_http_methods
@@ -17,6 +18,12 @@ def home(request):
         form = Form(request.POST)
         if form.is_valid():
             form.save()
+            send_mail(
+                subject='Nova mensagem de contato - MouraWeb',
+                message=f'Mensagem personalizada---- A ser definida ----',
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=['uaidevs.ia@gmail.com'],
+            )
             return redirect('core:home')
     else:
         form = Form()

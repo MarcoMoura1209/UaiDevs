@@ -10,6 +10,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 DEBUG = False
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+if 'RAILWAY_PUBLIC_DOMAIN' in os.environ:
+    ALLOWED_HOSTS.append(os.environ['RAILWAY_PUBLIC_DOMAIN'])
+
 
 RATELIMIT_ENABLE = True
 

@@ -167,6 +167,10 @@
         right: 0;
     }
 
+    .container-imagem-solucao {
+        display: none;
+    }
+    
     #faq {
         padding: 6rem 13rem;
     }

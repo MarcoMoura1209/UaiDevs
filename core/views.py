@@ -17,13 +17,25 @@ def home(request):
     if request.method == 'POST':
         form = Form(request.POST)
         if form.is_valid():
-            form.save()
-            send_mail(
-                subject='Nova mensagem de contato - MouraWeb',
-                message=f'Mensagem personalizada---- A ser definida ----',
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=['uaidevs.ia@gmail.com'],
+            cliente = form.save()
+            mensagem_email = (
+                f"Nome: {cliente.nome}\n"
+                f"Email: {cliente.email}\n"
+                f"Telefone: {cliente.telefone}\n"
+                f"Empresa: {cliente.empresa}\n\n"
+                f"Mensagem:\n{cliente.mensagem}"
             )
+
+            try:
+                send_mail(
+                    subject='Nova mensagem de contato - UaiDevs',
+                    message=mensagem_email,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=['marcomoura27052009@gmail.com@gmail.com'],
+                )
+            except Exception:
+                logger.exception('Erro ao enviar e-mail de contato via send_mail')
+
             return redirect('core:home')
     else:
         form = Form()

@@ -1,5 +1,6 @@
 from django.urls import reverse, resolve
-from django.test import TestCase, Client
+from django.test import TestCase, Client, override_settings
+from django.core import mail
 from core.models import Cliente
 from core import views
 
@@ -51,6 +52,25 @@ class ViewHomeTest(TestCase):
         response = self.client.post('/', dados)
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, '/')
+
+    @override_settings(EMAIL_BACKEND='django.core.mail.backends.locmem.EmailBackend')
+    def test_post_formulario_envia_msg_do_form_no_email(self):
+        dados = {
+            'nome': 'Homem Teste',
+            'email': 'homemteste@gmail.com',
+            'mensagem': 'Mensagem vindo do formulário para teste',
+            'telefone': '11999999999',
+            'empresa': 'Empresa Teste',
+            'fax_number': '',
+        }
+
+        mail.outbox = []
+
+        response = self.client.post('/', dados)
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(len(mail.outbox), 1)
+        self.assertIn('Mensagem vindo do formulário para teste', mail.outbox[0].body)
 
     def test_post_com_honeypot_preenchido_bloqueado(self):
         dados = {

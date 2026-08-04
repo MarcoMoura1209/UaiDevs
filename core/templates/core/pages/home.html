@@ -469,7 +469,7 @@
                             </div>
                             
                             {% load honeypot %}
-                            {% render_honeypot_field "fax_number" %}
+                            {% render_honeypot_field "campo_honeypot_xyz_nao_preencha" %}
                             
                             <div class="container-button">
                                 <button type="submit" aria-label="Enviar formulário de contato">
@@ -538,6 +538,15 @@
     <script src="{% static 'js/menu-toggle.js' %}"></script>
     <script src="{% static 'js/carrossel-feedback.js' %}"></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const honeypotInput = document.querySelector("input[name='honeypotcampo_honeypot_xyz_nao_preencha']"); // Substitua pelo nome do seu campo se for diferente
+            if (honeypotInput) {
+                honeypotInput.setAttribute("autocomplete", "off");
+            }
+        });
+    </script>
+    
     <!-- JSON-LD para Organization -->
     <script type="application/ld+json">
     {

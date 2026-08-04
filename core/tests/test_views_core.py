@@ -34,7 +34,7 @@ class ViewHomeTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
         response = self.client.post('/', dados)
         self.assertEqual(response.status_code, 302)
@@ -47,7 +47,7 @@ class ViewHomeTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
         response = self.client.post('/', dados)
         self.assertEqual(response.status_code, 302)
@@ -61,7 +61,7 @@ class ViewHomeTest(TestCase):
             'mensagem': 'Mensagem vindo do formulário para teste',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
 
         mail.outbox = []
@@ -70,7 +70,8 @@ class ViewHomeTest(TestCase):
 
         self.assertEqual(response.status_code, 302)
         self.assertEqual(len(mail.outbox), 1)
-        self.assertIn('Mensagem vindo do formulário para teste', mail.outbox[0].body)
+        self.assertIn('Mensagem vindo do formulário para teste',
+                      mail.outbox[0].body)
 
     def test_post_com_honeypot_preenchido_bloqueado(self):
         dados = {
@@ -79,7 +80,7 @@ class ViewHomeTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': 'honeypot preenchido',
+            'campo_honeypot_xyz_nao_preencha': 'honeypot preenchido',
         }
         response = self.client.post('/', dados)
         self.assertEqual(response.status_code, 400)
@@ -92,7 +93,7 @@ class ViewHomeTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
         response = self.client.post('/', dados)
         self.assertEqual(response.status_code, 200)

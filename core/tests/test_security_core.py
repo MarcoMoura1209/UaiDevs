@@ -12,7 +12,7 @@ class RateLimitTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
         for _ in range(10):
             response = self.client.post('/', dados)
@@ -35,7 +35,7 @@ class CsrfTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
         response = self.csrf_client.post(
             self.url, dados
@@ -52,7 +52,7 @@ class CsrfTest(TestCase):
             'mensagem': 'Ola, gostaria de conversar com voces',
             'telefone': '11999999999',
             'empresa': 'Empresa Teste',
-            'fax_number': '',
+            'campo_honeypot_xyz_nao_preencha': '',
         }
         response = self.csrf_client.post(
             self.url, dados, HTTP_X_CSRFTOKEN=csrf_token

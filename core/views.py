@@ -16,8 +16,10 @@ logger = logging.getLogger('core')
 def home(request):
     if request.method == 'POST':
         form = Form(request.POST)
+        print(request.POST)
         if form.is_valid():
             cliente = form.save()
+            logger.info('Formulario valido!!!')
             mensagem_email = (
                 f"Nome: {cliente.nome}\n"
                 f"Email: {cliente.email}\n"
@@ -31,12 +33,16 @@ def home(request):
                     subject='Nova mensagem de contato - UaiDevs',
                     message=mensagem_email,
                     from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=['marcomoura27052009@gmail.com@gmail.com'],
+                    recipient_list=['marcomoura27052009@gmail.com'],
                 )
             except Exception:
                 logger.exception('Erro ao enviar e-mail de contato via send_mail')
 
             return redirect('core:home')
+
+        else:
+            logger.warning('Formulario invalido. Erros: %s', form.errors.as_json())
+
     else:
         form = Form()
 

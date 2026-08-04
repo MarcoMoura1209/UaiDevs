@@ -132,7 +132,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-HONEYPOT_FIELD_NAME = 'fax_number'
+HONEYPOT_FIELD_NAME = 'campo_honeypot_xyz_nao_preencha'
 
 HONEYPOT_VALUE = ''
 
@@ -174,7 +174,7 @@ LOGGING = {
     },
 }
 
-PHONENUMBER_DEFAULT_REGION = "BR"
+PHONENUMBER_DEFAULT_REGION = 'BR'
 
 # Content Security Policy (CSP)
 CONTENT_SECURITY_POLICY_REPORT_ONLY = {

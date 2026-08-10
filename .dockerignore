@@ -1,0 +1,29 @@
+# Version control and local machine files
+.git
+.gitignore
+.github
+.vscode
+.DS_Store
+
+# Python runtime artifacts and caches
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local logs and generated assets that are not needed in the image build context
+logs/
+staticfiles/
+*.log
+
+# Editor and packaging noise
+*.swp
+*.swo
+.idea/

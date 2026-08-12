@@ -1,9 +1,11 @@
 services:
   db:
-    image: postgres:18-alpine
+    image: postgres:17-alpine
+    
     container_name: uaidevs-postgres
     restart: unless-stopped
     environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
@@ -31,7 +33,7 @@ services:
       DJANGO_SETTINGS_MODULE: UaiDevs.settings.production
       SECRET_KEY: ${SECRET_KEY}
       ADMIN_URL: ${ADMIN_URL}
-      ALLOWED_HOSTS: ${ALLOWED_HOSTS}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1}
       DB_NAME: ${DB_NAME}
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}

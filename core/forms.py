@@ -1,4 +1,5 @@
 from django import forms
+from phonenumber_field.formfields import PhoneNumberField
 from .models import Cliente
 
 
@@ -23,7 +24,7 @@ class Form(forms.ModelForm):
 
             'telefone': forms.TextInput(attrs={
                 'class': 'campo-telefone campo',
-                'placeholder': '(00)00000-0000',}),
+                'placeholder': '(00)00000-0000', }),
 
             'empresa': forms.TextInput(attrs={
                 'class': 'campo-empresa campo',

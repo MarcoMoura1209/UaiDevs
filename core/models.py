@@ -8,7 +8,7 @@ class Cliente(models.Model):
     nome = models.CharField(max_length=30)
     email = models.EmailField()
     mensagem = models.TextField(max_length=1500, blank=False, null=False)
-    telefone = PhoneNumberField(blank=False, null=False,)
+    telefone = PhoneNumberField(blank=False, null=False, region="BR")
     empresa = models.CharField(max_length=30)
 
     class Meta:

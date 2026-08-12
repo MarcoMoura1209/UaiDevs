@@ -36,8 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'phonenumber_field',
     'honeypot',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -174,7 +174,9 @@ LOGGING = {
     },
 }
 
-PHONENUMBER_DEFAULT_REGION = 'BR'
+PHONENUMBER_DEFAULT_REGION = "BR"
+
+PHONENUMBER_DEFAULT_FORMAT = "NATIONAL"
 
 # Content Security Policy (CSP)
 CONTENT_SECURITY_POLICY_REPORT_ONLY = {

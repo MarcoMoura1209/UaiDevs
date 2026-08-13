@@ -1,4 +1,5 @@
 import logging
+from decouple import config
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -33,7 +34,7 @@ def home(request):
                     subject='Nova mensagem de contato - UaiDevs',
                     message=mensagem_email,
                     from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=['marcomoura27052009@gmail.com'],
+                    recipient_list=[config('EMAIL_DEFAULT')],
                 )
             except Exception:
                 logger.exception('Erro ao enviar e-mail de contato via send_mail')

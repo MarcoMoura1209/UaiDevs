@@ -42,6 +42,7 @@ RUN DJANGO_SETTINGS_MODULE=UaiDevs.settings.production \
     DB_PORT="5432" \
     ALLOWED_HOSTS="localhost" \
     EMAIL_PASSWORD="dummy" \
+    EMAIL_DEFAULT="exemplo@gmail.com" \
     /opt/venv/bin/python manage.py collectstatic --noinput --clear
 
 # Runtime stage: keep only the minimal Python runtime and app files.

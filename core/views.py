@@ -1,13 +1,13 @@
 import logging
 from decouple import config
+from django.conf import settings
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views.decorators.http import require_http_methods
-from .forms import Form
 from django_ratelimit.decorators import ratelimit
 from honeypot.decorators import check_honeypot
-from django.conf import settings
+from .forms import Form
 
 
 logger = logging.getLogger('core')

@@ -11,6 +11,8 @@ django-csp==4.0
 django-honeypot==1.3.0
 django-phonenumber-field==8.4.0
 django-ratelimit==4.1.0
+django-stubs==6.1.0
+django-stubs-ext==6.1.0
 filelock==3.29.0
 gunicorn==26.0.0
 idna==3.13
@@ -42,6 +44,8 @@ sqlparse==0.5.5
 terminaltables==3.1.10
 tomli==2.4.1
 tomli_w==1.2.0
+types-PyYAML==6.0.12.20260815
+typing_extensions==4.16.0
 tzdata==2026.2
 urllib3==2.7.0
 whitenoise==6.12.0

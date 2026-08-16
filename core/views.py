@@ -38,12 +38,16 @@ def home(request):
                     recipient_list=[config('EMAIL_DEFAULT')],
                 )
             except Exception:
-                logger.exception('Erro ao enviar e-mail de contato via send_mail')
+                logger.exception(
+                    'Erro ao enviar e-mail de contato via send_mail'
+                    )
 
             return redirect('core:home')
 
         else:
-            logger.warning('Formulario invalido. Erros: %s', form.errors.as_json())
+            logger.warning(
+                'Formulario invalido. Erros: %s', form.errors.as_json()
+                )
 
     else:
         form = Form()

@@ -12,6 +12,7 @@ from .forms import Form
 
 logger = logging.getLogger('core')
 
+
 @check_honeypot
 @ratelimit(key='ip', rate='10/h', method='POST', block=True)
 def home(request):
@@ -78,11 +79,9 @@ def sitemap(request):
 @require_http_methods(["GET"])
 def robots(request):
     """Gera e serve o robots.txt dinamicamente"""
-    admin_url = getattr(settings, 'ADMIN_URL', 'admin/')
     robots_content = '''User-agent: *
 Allow: /
 
-Disallow: /{admin_url}/
 Disallow: /static/
 Disallow: /media/
 

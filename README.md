@@ -14,6 +14,7 @@ O projeto foi desenvolvido durante meu estágio utilizando Django Templates no b
 - HTML5
 - CSS3
 - JavaScript
+- Docker
 
 ## Funcionalidades
 
